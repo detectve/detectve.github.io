@@ -1,5 +1,6 @@
 body {
-    background-color: #001d4a;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #212b50;
 }
 
 p {
@@ -7,9 +8,10 @@ p {
 }
 
 a {
-    color:#5c5c5c;
+    color:#817d7d;
 }
 
 #main {
     padding: 85px;
 }
+
