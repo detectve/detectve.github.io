@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto Mono', monospace;
-    background-color: #212b50;
+    background-color: #12191b;
 }
 
 p {
@@ -8,7 +8,7 @@ p {
 }
 
 a {
-    color:#817d7d;
+    color:#6f685d
 }
 
 #main {
