@@ -11,6 +11,7 @@
         <link href = "css/output.css" rel = "stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="js/typed.js"></script>
+        <script src="js/time.js"></script>
     </head>
     <body>
     <div id = "vanta-canvas"></div>
@@ -23,6 +24,7 @@
             <p class="text-white"><i class = "fab fa-github"></i> <a href="https://github.com/detectve" class = "text-blue-200 hover:text-cyan-300">detectve</a></p>
             <p class="text-white"><i class = "fab fa-twitter"></i> <a href="https://twitter.com/uhhhdetective" class = "text-blue-200 hover:text-cyan-300">uhhhdetective</a></p>
             <p class="text-white"><i class = "fa fa-envelope"></i> <a href="mailto:uhhhdetective@protonmail.com" class = "text-blue-200 hover:text-cyan-300">uhhhdetective@protonmail.com</a></p>
+            <div id = "digital-clock">loading time...</div>
         </div>
         </div>
     </div>
@@ -39,6 +41,22 @@
                 backSpeed: 70,
                 loop: true,
             });
+        </script>
+        <script>
+            function display_c() {
+                var refresh = 1000; // Refresh rate in milli seconds
+                mytime = setTimeout('display_ct()', refresh)
+            }
+    
+            function display_ct() {
+                var strcount
+                var x = new Date().toLocaleString("en-US", {timeZone: "America/Sao_Paulo"});
+                var x1 = x.getMonth() + 1 + "/" + x.getDate() + "/" + x.getYear();
+                x1 = x1 + " - " + x.getHours( ) + ":" + x.getMinutes() + ":" + x.getSeconds();
+                document.getElementById('ct').innerHTML = x1;
+    
+                tt = display_c();
+            }
         </script>
         <script>
         VANTA.WAVES({
