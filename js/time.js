@@ -26,5 +26,6 @@ function getDateTime() {
 }
 setInterval(function(){
     currentTime = getDateTime();
-    document.getElementById("digital-clock").innerHTML = currentTime;
+    // console.log(currentTime);
+    document.getElementById("digital-clock").innerHTML = currentTime; // update the time on the page every second (1000 milliseconds)
 }, 1000);

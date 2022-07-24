@@ -3,6 +3,7 @@
     <head>
         <meta charset=UTF-8>
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>uhhhdetective.xyz</title>
         <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">   
@@ -10,67 +11,28 @@
         <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
         <link href = "css/output.css" rel = "stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="js/typed.js"></script>
-        <script src="js/time.js"></script>
     </head>
     <body>
     <div id = "vanta-canvas"></div>
-    <div id="main">
-        <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-        <div class="rounded overflow-hidden shadow-lg bg-[#302e2e]">
-            <div class="px-6 py-4">
-            <h1 class = "text-white text-3xl font-semibold"><span class = 'text-white type'></span></h1>
-            <p class="text-white"><i class = "fab fa-discord"></i> <a href="https://discord.com/users/718798976211484724" class = "text-blue-200 hover:text-cyan-300">uhhhdetective#1337</a></p>
-            <p class="text-white"><i class = "fab fa-github"></i> <a href="https://github.com/detectve" class = "text-blue-200 hover:text-cyan-300">detectve</a></p>
-            <p class="text-white"><i class = "fab fa-twitter"></i> <a href="https://twitter.com/uhhhdetective" class = "text-blue-200 hover:text-cyan-300">uhhhdetective</a></p>
-            <p class="text-white"><i class = "fa fa-envelope"></i> <a href="mailto:uhhhdetective@protonmail.com" class = "text-blue-200 hover:text-cyan-300">uhhhdetective@protonmail.com</a></p>
-            <div id = "digital-clock">loading time...</div>
-        </div>
-        </div>
-    </div>
-    </div>
-        <script>
-            var typed = new Typed('.type', {
-                strings: [
-                    'i use python,', 
-                    'i use javascript,',
-                    'i use c#,',
-                    'and am learning more!',
-                ],
-                typeSpeed: 60, 
-                backSpeed: 70,
-                loop: true,
-            });
-        </script>
-        <script>
-            function display_c() {
-                var refresh = 1000; // Refresh rate in milli seconds
-                mytime = setTimeout('display_ct()', refresh)
-            }
-    
-            function display_ct() {
-                var strcount
-                var x = new Date().toLocaleString("en-US", {timeZone: "America/Sao_Paulo"});
-                var x1 = x.getMonth() + 1 + "/" + x.getDate() + "/" + x.getYear();
-                x1 = x1 + " - " + x.getHours( ) + ":" + x.getMinutes() + ":" + x.getSeconds();
-                document.getElementById('ct').innerHTML = x1;
-    
-                tt = display_c();
-            }
-        </script>
-        <script>
-        VANTA.WAVES({
-            el: "#vanta-canvas",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x4101d,
-        })
-        </script>
+
+    <div id = "main">
+        <div id="main">
+            <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+            <div class="rounded overflow-hidden shadow-lg bg-[#302e2e]">
+                <div class="px-6 py-4">
+                <h1 class = "text-white text-2xl font-semibold"><span class = 'text-white type'></span></h1>
+                <p class="text-white"><i class = "fab fa-discord"></i> <a href="https://discord.com/users/718798976211484724" class = "text-blue-200 hover:text-cyan-300">uhhhdetective#1337</a></p>
+                <p class="text-white"><i class = "fab fa-github"></i> <a href="https://github.com/detectve" class = "text-blue-200 hover:text-cyan-300">detectve</a></p>
+                <p class="text-white"><i class = "fab fa-twitter"></i> <a href="https://twitter.com/uhhhdetective" class = "text-blue-200 hover:text-cyan-300">uhhhdetective</a></p>
+                <p class="text-white"><i class = "fa fa-envelope"></i> <a href="mailto:uhhhdetective@protonmail.com" class = "text-blue-200 hover:text-cyan-300">uhhhdetective@protonmail.com</a></p>
+                <div id = "digital-clock">loading time...</div>
+            </div>
+            </div>
+    <div>
+
+        <script src="js/typed.js"></script>
+        <script src="js/time.js"></script>
+        <script src="js/load.js"></script>
     </div>
     </body>
 </html>
