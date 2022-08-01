@@ -13,3 +13,11 @@ body{
     position: absolute;
     opacity: 0.5;
 }
+
+h1{
+    font-family: 'Inconsolata', monospace;
+}
+
+h2{
+    font-family: 'Rajdhani', sans-serif;
+}
