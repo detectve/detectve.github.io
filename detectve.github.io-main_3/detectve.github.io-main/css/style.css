@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #161a1f;
+    font-family: 'Roboto', sans-serif;
+    color: white
+}
+
+#vanta-canvas{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.5;
+}
+
+h1{
+    font-family: 'Inconsolata', monospace;
+}
+
+h2{
+    font-family: 'Rajdhani', sans-serif;
+}
